@@ -11,6 +11,9 @@ public class HelloServiceFactory {
 
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
         ServiceLoader<HelloService> loader = ServiceLoader.load(HelloService.class);
+        for (HelloService helloService : loader) {
+
+        }
         Optional<HelloService> helloServiceOptional = loader.findFirst();
         helloServiceOptional.ifPresent(h -> {
             System.out.println(h.hello());

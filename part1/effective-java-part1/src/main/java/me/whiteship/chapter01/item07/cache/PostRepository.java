@@ -10,6 +10,7 @@ public class PostRepository {
 
     public PostRepository() {
         this.cache = new WeakHashMap<>();
+        //this.cache = new HashMap<>();
     }
 
     public Post getPostById(CacheKey key) {
