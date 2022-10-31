@@ -1,5 +1,10 @@
 package me.whiteship.chapter04.item20.multipleinheritance;
 
+/**
+ * 이펙티브 자바 - 134p
+ *
+ * 시뮬레이트한 다중 상속 (simulated multiple inheritance)
+ */
 public class MyCat extends AbstractCat implements Flyable {
 
     private MyFlyable myFlyable = new MyFlyable();
